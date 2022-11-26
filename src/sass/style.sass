@@ -4,8 +4,21 @@
 @import "_variables"
 @import "_mixins"
 @import "_general"
+@import "blocks/header/_header"
+@import "blocks/header/_header-media"
+@import "blocks/promo/_promo"
+@import "blocks/promo/_promo-media"
 @import "_media"
 
 *
     margin: 0
     font-family: 'Roboto', sans-serif
+
+.container
+    padding: 0
+    @media screen and ( min-width: 1200px )
+        max-width: 1140px
+    @media screen and ( max-width: 575px )
+        max-width: calc( 100% - 60px )
+    @media screen and ( max-width: 424px )
+        max-width: calc( 100% - 30px )

@@ -1,0 +1,61 @@
+.promo
+    @media (max-width: 1199px)
+        &_header
+            font-size: 50px
+            line-height: 40px
+
+    @media (max-width: 991px)
+        &_header
+            font-size: 40px
+            line-height: 30px
+        &_subheader
+            font-size: 30px
+            line-height: 33px
+        &_descr
+            padding: 0
+    
+    @media (max-width: 767px)
+        background-position-x: 62% 
+        padding-bottom: 80px
+        &_header
+            font-size: 36px
+            line-height: 30px
+        &_subheader
+            font-size: 24px
+            line-height: 27px
+        &_descr
+            font-size: 14px
+        &_btn
+            margin-top: 80px
+
+    @media (max-width: 575px)
+        padding: 113px 0 35px 0
+        &_header
+            font-size: 30px
+        &_subheader
+            font-size: 20px
+            line-height: 22px
+            margin-top: 26px
+        &_descr
+            display: none
+
+    @media (max-width: 424px)
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+            font-size: 16px
+            &:hover
+                background-image: linear-gradient (to top, $button_color 0%, #4ce2ff 100%)
+    
+    @media (max-width: 296px)
+        padding-top: 95px
+        &_header
+            font-size: 24px
+        &_subheader
+            font-size: 14px
+        &_btn
+            margin-top: 52px
+            width: 180px
+            height: 45px
+            font-size: 14px
