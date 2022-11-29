@@ -1,0 +1,44 @@
+.require
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0 62px 0
+        &_nmb
+            margin: 0
+    &_title
+        line-height: 24px
+        font-size: 22px
+        font-weight: 400
+        color: $require_color
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        margin-bottom: 0
+        li
+            position: relative
+            margin-bottom: 14px
+            font-size: 17px
+            font-weight: 300
+            line-height: 20px
+            text-align: left
+            color: #222
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                left: -32px
+                width: 21px
+                height: 20px
+                background: url('../icons/blue_mark.png') center (center / cover) no-repeat
+            &:last-of-type
+                margin-bottom: 0
+    &_descr
+        margin-top: 18px
+        color: $require_color
+    .red
+        .require_title
+            color: $requirements_color
+        .require_list
+            li
+                &::before
+                    background: url('../icons/red_mark.png') center (center / cover) no-repeat

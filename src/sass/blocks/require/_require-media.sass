@@ -1,0 +1,39 @@
+.require
+    @media (max-width: 991px)
+        padding: 38px 0 54px 0
+
+    @media (max-width: 767px)
+        .row
+            margin-top: 33px
+        &_block
+            margin-top: 0
+        .mb-62
+            margin-bottom: 62px
+
+    @media (max-width: 575px)
+        padding: 25px 0
+        .row
+            margin-top: 22px
+        .mb-32
+            margin-bottom: 32px
+        .mb-40
+            margin-bottom: 40px
+        &_title
+            line-height: 16px
+            font-size: 16px
+        &_list
+            padding-left: 30px
+            margin-top: 16px
+            li
+                font-size: 14px
+                margin-bottom: 12px
+                line-height: 16px
+                &::before
+                    left: -30px
+        &_descr
+            font-size: 14px
+            margin-top: 15px
+
+    @media (max-width: 319px)
+        .require_list li
+            font-size: 13px
